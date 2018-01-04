@@ -1,10 +1,13 @@
-package com.test;
+package com.test.activity;
 
 import android.content.Context;
 import android.databinding.DataBindingUtil;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
+
+import com.test.ItemFragment;
+import com.test.R;
 import com.test.databinding.ActivityMainBinding;
 import com.test.utils.CommonUtils;
 
@@ -16,8 +19,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        binding = DataBindingUtil.setContentView(this,R.layout.activity_main);
+        binding = DataBindingUtil.setContentView(this, R.layout.activity_main);
         initIds();
+        CommonUtils.setFragment(new ItemFragment(),false,this,binding.flContainer,"");
     }
 
     private void initIds() {

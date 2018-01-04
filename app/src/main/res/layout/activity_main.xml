@@ -8,7 +8,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context="com.test.MainActivity">
+    tools:context="com.test.activity.MainActivity">
 
     <include
         android:id="@+id/llHeader"
@@ -18,7 +18,7 @@
         android:id="@+id/flContainer"
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:background="@color/colorPrimary"
+        android:background="@android:color/transparent"
         android:layout_weight="1"/>
 
     <include
