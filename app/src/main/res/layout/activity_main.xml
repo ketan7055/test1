@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+<LinearLayout android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.test.MainActivity">
+
+    <include
+        android:id="@+id/llHeader"
+        layout="@layout/header_tab"/>
+
+    <FrameLayout
+        android:id="@+id/flContainer"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="@color/colorPrimary"
+        android:layout_weight="1"/>
+
+    <include
+        android:id="@+id/llBotttom"
+        layout="@layout/bottom_tab"/>
+
+</LinearLayout>
+</layout>
