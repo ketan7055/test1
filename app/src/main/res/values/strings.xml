@@ -1,7 +1,7 @@
 <resources>
     <string name="app_name">testAnkit</string>
     <string name="wip">Work in progress.</string>
-    <string name="_55_5">ξ55.5</string>
+    <string name="_55_5">&#163;55.5</string>
 
     <string name="rating_value">4.8</string>
     <string name="rating">Rating</string>
